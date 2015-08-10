@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8A9AB26A-9D2E-4956-895D-1038552F6C2C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LavaRush</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9C040608F525199C6370CA64BDE039CAE4AF2550</key>
+		<string>https://github.com/chris-ray-zhang/LavaRush.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LavaRush.spritebuilder/LavaRush.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9C040608F525199C6370CA64BDE039CAE4AF2550</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chris-ray-zhang/LavaRush.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9C040608F525199C6370CA64BDE039CAE4AF2550</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9C040608F525199C6370CA64BDE039CAE4AF2550</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LavaRush</string>
+		</dict>
+	</array>
+</dict>
+</plist>
