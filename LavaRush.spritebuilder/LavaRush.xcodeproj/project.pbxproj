@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123B47AB1B79510F0098E637 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B47AA1B79510F0098E637 /* CoreMotion.framework */; };
+		1264C7361B77D88D00049653 /* FallingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1264C7351B77D88D00049653 /* FallingObject.swift */; };
+		1264C7381B77DA2900049653 /* FallingObjectImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1264C7371B77DA2900049653 /* FallingObjectImages.plist */; };
+		1264C73A1B77DA6E00049653 /* FallingObjects in Resources */ = {isa = PBXBuildFile; fileRef = 1264C7391B77DA6E00049653 /* FallingObjects */; };
+		1264C7421B77E03E00049653 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1264C7411B77E03E00049653 /* Helper.swift */; };
 		5B121030197484FA004C1E1D /* LavaRushActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* LavaRushActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -148,6 +153,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123B47AA1B79510F0098E637 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1264C7351B77D88D00049653 /* FallingObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObject.swift; sourceTree = "<group>"; };
+		1264C7371B77DA2900049653 /* FallingObjectImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FallingObjectImages.plist; sourceTree = "<group>"; };
+		1264C7391B77DA6E00049653 /* FallingObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FallingObjects; sourceTree = "<group>"; };
+		1264C7411B77E03E00049653 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -254,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123B47AB1B79510F0098E637 /* CoreMotion.framework in Frameworks */,
 				7A97911819E631CD001FFC4D /* libcocos2d.a in Frameworks */,
 				8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
@@ -436,6 +447,10 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				1264C7351B77D88D00049653 /* FallingObject.swift */,
+				1264C7411B77E03E00049653 /* Helper.swift */,
+				1264C7371B77DA2900049653 /* FallingObjectImages.plist */,
+				1264C7391B77DA6E00049653 /* FallingObjects */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
 			name = Source;
@@ -487,6 +502,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				123B47AA1B79510F0098E637 /* CoreMotion.framework */,
 				BC5399D31A44DCC90063F482 /* AndroidKit.framework */,
 				BC5399D41A44DCC90063F482 /* CoreJava.framework */,
 				BC5399D51A44DCC90063F482 /* GLActivityKit.framework */,
@@ -609,6 +625,7 @@
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					B77F1B2D17B978D7009739AE = {
+						DevelopmentTeam = M8DJMCDGN8;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -737,6 +754,8 @@
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				1264C73A1B77DA6E00049653 /* FallingObjects in Resources */,
+				1264C7381B77DA2900049653 /* FallingObjectImages.plist in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
@@ -814,6 +833,8 @@
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
+				1264C7421B77E03E00049653 /* Helper.swift in Sources */,
+				1264C7361B77D88D00049653 /* FallingObject.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
