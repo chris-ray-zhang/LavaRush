@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>28</integer>
+	<integer>30</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -43,7 +43,7 @@
 		<array>
 			<dict>
 				<key>UUID</key>
-				<integer>7</integer>
+				<integer>28</integer>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -51,9 +51,9 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>bestback</string>
+				<string>updatedBackground</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>background</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -74,7 +74,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>328</real>
+							<real>451.39791870117188</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -98,7 +98,7 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.0467004776000977</real>
+							<real>1</real>
 							<real>1</real>
 							<false/>
 							<integer>0</integer>
@@ -112,7 +112,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>LavaRush Assets/bestback.png</string>
+							<string>LavaRush Assets/updatedBackground.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -148,6 +148,116 @@
 						<array/>
 					</dict>
 				</array>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>29</integer>
+				<key>baseClass</key>
+				<string>CCSprite</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>sunBackdrop</string>
+				<key>memberVarAssignmentName</key>
+				<string>sunMidground</string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>160</real>
+							<real>51.397918701171875</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>spriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>LavaRush Assets/sunBackdrop.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>normalMapSpriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string></string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>effects</string>
+						<key>type</key>
+						<string>EffectControl</string>
+						<key>value</key>
+						<array/>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -254,7 +364,7 @@
 								<key>value</key>
 								<array>
 									<real>159.98908996582031</real>
-									<real>13.551261901855469</real>
+									<real>-18.03570556640625</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -328,8 +438,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -472,7 +580,7 @@
 								<key>value</key>
 								<array>
 									<real>320</real>
-									<real>328</real>
+									<real>484.79022216796875</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -527,7 +635,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>160</real>
+								<real>300</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -552,8 +660,8 @@
 								<string>FloatVar</string>
 								<key>value</key>
 								<array>
-									<real>10</real>
 									<real>3</real>
+									<real>15</real>
 								</array>
 							</dict>
 							<dict>
@@ -564,7 +672,7 @@
 								<key>value</key>
 								<array>
 									<real>1.7000000476837158</real>
-									<real>5</real>
+									<real>8</real>
 								</array>
 							</dict>
 							<dict>
@@ -586,7 +694,7 @@
 								<key>value</key>
 								<array>
 									<real>120</real>
-									<real>0.0</real>
+									<real>100</real>
 								</array>
 							</dict>
 							<dict>
@@ -597,7 +705,7 @@
 								<key>value</key>
 								<array>
 									<real>180</real>
-									<real>0.0</real>
+									<real>100</real>
 								</array>
 							</dict>
 							<dict>
@@ -607,7 +715,7 @@
 								<string>FloatVar</string>
 								<key>value</key>
 								<array>
-									<real>180</real>
+									<real>225</real>
 									<real>10</real>
 								</array>
 							</dict>

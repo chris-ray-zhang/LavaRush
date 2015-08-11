@@ -6,6 +6,8 @@ class MainScene: CCNode {
     weak var hero: CCSprite!
     weak var ground: CCSprite!
     weak var gamePhysicsNode: CCPhysicsNode!
+    weak var background: CCNode!
+    weak var sunMidground: CCNode!
     
     private var fallingObjects = [FallingObject]()
 
@@ -18,7 +20,6 @@ class MainScene: CCNode {
     func didLoadFromCCB() {
         userInteractionEnabled = true
         gamePhysicsNode.collisionDelegate = self
-        motionManager.startAccelerometerUpdates() //Supposedly starts the accelerometer when didLoadFromCCB is called, collects iPhone tilt information.
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
@@ -45,6 +46,11 @@ class MainScene: CCNode {
             hero.position.x = maxX
         }
         
+        background.position.y = 445.0 - (hero.position.y)/10
+        sunMidground.position.y = 55.0 - (hero.position.y)/20
+        ground.position.y = -18.0 - (hero.position.y)/10
+        println("\(sunMidground.position.y) : \(ground.position.y)")
+        
     }
     
     //Starts running when the current scene finishes presenting itself.  Useful for spawning objects after player presses the start button and not before.
@@ -69,11 +75,11 @@ class MainScene: CCNode {
         velX = acceleration.x * 750
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, block: CCNode!, ground: CCNode!) -> Bool {
-        block.position = ccp(block.position.x, block.position.y)
-        block.physicsBody.type = CCPhysicsBodyType(rawValue: UInt(1))!
-        return true
-    }
+//    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, block: CCNode!, ground: CCNode!) -> Bool {
+//        block.position = ccp(block.position.x, block.position.y)
+//        block.physicsBody.type = CCPhysicsBodyType(rawValue: UInt(1))!
+//        return true
+//    }
     
     //Function for spawning a block.  Appends one random object from FallingObject class into an array, then sets that objects position and scales it down.
     func spawnObject() {
