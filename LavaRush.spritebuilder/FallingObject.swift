@@ -34,9 +34,10 @@ class FallingObject: CCSprite {
         }
         
         let spriteFrame = CCSpriteFrame(imageNamed: imageName)
-        
+        /*
         super.init(texture: spriteFrame.texture, rect: spriteFrame.rect, rotated: false)
-        
+        */
+        super.init(texture: spriteFrame.texture, rect: spriteFrame.rect, rotated: false)
         anchorPoint = ccp(0, 0)
     }
     

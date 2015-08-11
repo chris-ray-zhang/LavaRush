@@ -71,9 +71,80 @@ class MainScene: CCNode {
     
     //Function for spawning a block.  Appends one random object from FallingObject class into an array, then sets that objects position and scales it down.
     func spawnObject() {
+        var images: [String] = []
+        var imageName: String?
+
+        /*
+        
+        let path = NSBundle.mainBundle().pathForResource("FallingObjectImages", ofType: "plist")
+        let imageDictionary:Dictionary = NSDictionary(contentsOfFile: path!) as! [String: AnyObject]
+        images = imageDictionary["FallingObjectImages"] as! [String]
+        let randomIndex = randomInteger(images.count)
+        imageName = images[randomIndex]
+        
+        */
+        
+        
+        let newBlock:CCNode = CCBReader.load("physicsNode")
+        /*
+        if let block = newBlock.getChildByName("block", recursively: false) as? CCSprite {
+            block.spriteFrame = CCSpriteFrame(imageNamed: imageName)
+        }
+        */
+        let xSpawnRange = Int(contentSizeInPoints.width - newBlock.contentSize.width)
+        let spawnPosition = ccp(CGFloat(randomInteger(xSpawnRange)), contentSizeInPoints.height)
+        newBlock.position = spawnPosition
+        
+        newBlock.scaleX = 0.5
+        newBlock.scaleY = 0.5
+        
+        
+        /*
+        newBlock.physicsBody.affectedByGravity = true
+
+        */
+        
+        
+        if let physicNode = getChildByName("physicNode", recursively: false) as? CCPhysicsNode {
+            println("adding physicsNode")
+            physicNode.addChild(newBlock)
+        }
+        
+        
+        
+        
+        
+        
+        
+        /*
+        newBlock = CCNode()
+        imageOfBlock = CCSprite(imageNamed: imageName)
+        imageOfBlock.anchorPoint = ccp(0, 0)
+        
+        newBlock.addChild(imageOfBlock)
+        
+        let xSpawnRange = Int(contentSizeInPoints.width)
+        let spawnPosition = ccp(CGFloat(randomInteger(xSpawnRange)), contentSizeInPoints.height)
+        
+        newBlock.position = spawnPosition
+        newBlock.scaleX = 0.5
+        newBlock.scaleY = 0.5
+        println("spawning object")
+        self.addChild(newBlock)
+        */
+        
+        
+        /*
+        if let physicNode = getChildByName("physicNode", recursively: false) as? CCPhysicsNode {
+            println("adding physicsNode")
+            physicNode.addChild(newBlock)
+        }
+        
         
         let fallingObjectType = FallingObject.FallingObjectType(rawValue: 0)!
         let fallingObject = FallingObject(type: fallingObjectType)
+
+        
         
         fallingObjects.append(fallingObject)
         
@@ -84,7 +155,12 @@ class MainScene: CCNode {
         fallingObject.scaleX = 0.5
         fallingObject.scaleY = 0.5
         
+        if let physicNode = getChildByName("physicNode", recursively: false) as? CCPhysicsNode {
+            println("adding physicsNode")
+            physicNode.addChild(fallingObject)
+        }
         addChild(fallingObject)
+        */
     }
     
 }
