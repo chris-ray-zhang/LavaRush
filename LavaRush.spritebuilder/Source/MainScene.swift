@@ -30,6 +30,8 @@ class MainScene: CCNode {
         let maxX = gamePhysicsNode.boundingBox().size.width
         let velocityY = clampf(Float(hero.physicsBody.velocity.y), -Float(CGFloat.max), 530)
         
+        let actionFollow = CCActionFollow(target: hero)
+        
         hero.physicsBody.velocity = ccp(CGFloat(velX), CGFloat(velocityY))
         hero.rotation = Float(velX) / 16.66
         
@@ -47,9 +49,15 @@ class MainScene: CCNode {
         }
         
         background.position.y = 445.0 - (hero.position.y)/10
-        sunMidground.position.y = 55.0 - (hero.position.y)/20
+        sunMidground.position.y = 55.0 - (hero.position.y)/7
         ground.position.y = -18.0 - (hero.position.y)/10
-        println("\(sunMidground.position.y) : \(ground.position.y)")
+        
+        if (hero.position.y >= 2700.0) {
+            background.position.y = 445.0 - 270.0
+        }
+        
+        runAction(actionFollow)
+        
         
     }
     
