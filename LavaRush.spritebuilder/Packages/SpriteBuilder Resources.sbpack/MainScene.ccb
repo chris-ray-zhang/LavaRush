@@ -707,6 +707,7 @@
 						<string>FloatScale</string>
 						<key>value</key>
 						<array>
+<<<<<<< HEAD
 							<real>10</real>
 							<integer>0</integer>
 						</array>
@@ -720,6 +721,13 @@
 						<array>
 							<real>0.0</real>
 							<integer>0</integer>
+=======
+							<real>160</real>
+							<real>451.39791870117188</real>
+							<integer>0</integer>
+							<integer>1</integer>
+							<integer>1</integer>
+>>>>>>> 77d26de9ce3680a7005755f1fcd9f80b1955e189
 						</array>
 					</dict>
 					<dict>
@@ -742,10 +750,17 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
+<<<<<<< HEAD
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>0.0</real>
+=======
+							<real>0.79558974504470825</real>
+							<real>0.98966789245605469</real>
+							<false/>
+							<integer>1</integer>
+>>>>>>> 77d26de9ce3680a7005755f1fcd9f80b1955e189
 						</array>
 					</dict>
 					<dict>
@@ -798,6 +813,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -964,6 +981,18 @@
 							<string>LavaRush Assets/helpButton.png/helpButton.png</string>
 						</array>
 					</dict>
+<<<<<<< HEAD
+=======
+				</array>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>8</integer>
+				<key>baseClass</key>
+				<string>CCPhysicsNode</string>
+				<key>children</key>
+				<array>
+>>>>>>> 77d26de9ce3680a7005755f1fcd9f80b1955e189
 					<dict>
 						<key>name</key>
 						<string>labelOpacity|Disabled</string>
@@ -1093,9 +1122,13 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
+<<<<<<< HEAD
 							<real>0.0</real>
 							<real>0.0</real>
 							<real>127</real>
+=======
+							<real>-300</real>
+>>>>>>> 77d26de9ce3680a7005755f1fcd9f80b1955e189
 						</array>
 					</dict>
 					<dict>
