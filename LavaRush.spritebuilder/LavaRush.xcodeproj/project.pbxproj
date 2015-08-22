@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		123B47AB1B79510F0098E637 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B47AA1B79510F0098E637 /* CoreMotion.framework */; };
+		12648D281B7D7A9D00EDC30C /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12648D271B7D7A9D00EDC30C /* StartScene.swift */; };
 		1264C7361B77D88D00049653 /* FallingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1264C7351B77D88D00049653 /* FallingObject.swift */; };
 		1264C7381B77DA2900049653 /* FallingObjectImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1264C7371B77DA2900049653 /* FallingObjectImages.plist */; };
 		1264C73A1B77DA6E00049653 /* FallingObjects in Resources */ = {isa = PBXBuildFile; fileRef = 1264C7391B77DA6E00049653 /* FallingObjects */; };
 		1264C7421B77E03E00049653 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1264C7411B77E03E00049653 /* Helper.swift */; };
+		126E6FBE1B7EFEF400594DD5 /* physicsNodeYellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E6FBD1B7EFEF400594DD5 /* physicsNodeYellow.swift */; };
+		126E6FC21B7EFF3800594DD5 /* physicsNodeRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E6FC11B7EFF3800594DD5 /* physicsNodeRed.swift */; };
+		126E6FC41B7EFF3F00594DD5 /* physicsNodeBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E6FC31B7EFF3F00594DD5 /* physicsNodeBlue.swift */; };
+		126E6FC61B7EFF4800594DD5 /* physicsNodeGreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126E6FC51B7EFF4800594DD5 /* physicsNodeGreen.swift */; };
 		5B121030197484FA004C1E1D /* LavaRushActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* LavaRushActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
 		7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A046D7519E84C36004C4763 /* MainScene.swift */; };
@@ -155,10 +160,15 @@
 
 /* Begin PBXFileReference section */
 		123B47AA1B79510F0098E637 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		12648D271B7D7A9D00EDC30C /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		1264C7351B77D88D00049653 /* FallingObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObject.swift; sourceTree = "<group>"; };
 		1264C7371B77DA2900049653 /* FallingObjectImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FallingObjectImages.plist; sourceTree = "<group>"; };
 		1264C7391B77DA6E00049653 /* FallingObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FallingObjects; sourceTree = "<group>"; };
 		1264C7411B77E03E00049653 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		126E6FBD1B7EFEF400594DD5 /* physicsNodeYellow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = physicsNodeYellow.swift; sourceTree = "<group>"; };
+		126E6FC11B7EFF3800594DD5 /* physicsNodeRed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = physicsNodeRed.swift; sourceTree = "<group>"; };
+		126E6FC31B7EFF3F00594DD5 /* physicsNodeBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = physicsNodeBlue.swift; sourceTree = "<group>"; };
+		126E6FC51B7EFF4800594DD5 /* physicsNodeGreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = physicsNodeGreen.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
 		5B12100F197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121011197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -284,6 +294,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126E6FC71B7EFF5B00594DD5 /* physicsNodes */ = {
+			isa = PBXGroup;
+			children = (
+				126E6FC11B7EFF3800594DD5 /* physicsNodeRed.swift */,
+				126E6FBD1B7EFEF400594DD5 /* physicsNodeYellow.swift */,
+				BDD9E1541B79743800067E41 /* physicsNode.swift */,
+				126E6FC31B7EFF3F00594DD5 /* physicsNodeBlue.swift */,
+				126E6FC51B7EFF4800594DD5 /* physicsNodeGreen.swift */,
+			);
+			name = physicsNodes;
+			sourceTree = "<group>";
+		};
 		5B12100D197483EE004C1E1D /* res */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,10 +471,11 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
-				BDD9E1541B79743800067E41 /* physicsNode.swift */,
+				12648D271B7D7A9D00EDC30C /* StartScene.swift */,
 				1264C7351B77D88D00049653 /* FallingObject.swift */,
 				1264C7411B77E03E00049653 /* Helper.swift */,
 				1264C7371B77DA2900049653 /* FallingObjectImages.plist */,
+				126E6FC71B7EFF5B00594DD5 /* physicsNodes */,
 				1264C7391B77DA6E00049653 /* FallingObjects */,
 				D352B48019EC608A00829775 /* MetalShaders */,
 			);
@@ -835,11 +858,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				12648D281B7D7A9D00EDC30C /* StartScene.swift in Sources */,
 				BDD9E1551B79743800067E41 /* physicsNode.swift in Sources */,
+				126E6FC41B7EFF3F00594DD5 /* physicsNodeBlue.swift in Sources */,
+				126E6FC61B7EFF4800594DD5 /* physicsNodeGreen.swift in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				1264C7421B77E03E00049653 /* Helper.swift in Sources */,
 				1264C7361B77D88D00049653 /* FallingObject.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
+				126E6FC21B7EFF3800594DD5 /* physicsNodeRed.swift in Sources */,
+				126E6FBE1B7EFEF400594DD5 /* physicsNodeYellow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,6 +1175,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1179,6 +1208,7 @@
 				PRODUCT_NAME = LavaRush;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Source/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
